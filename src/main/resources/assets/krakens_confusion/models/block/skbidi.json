@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/cauldron_bottom",
+    "up": "minecraft:block/cauldron_bottom",
+    "north": "minecraft:block/cauldron_bottom",
+    "east": "minecraft:block/cauldron_bottom",
+    "south": "minecraft:block/cauldron_bottom",
+    "west": "minecraft:block/cauldron_bottom",
+    "particle": "minecraft:block/cauldron_bottom"
+  },
+  "render_type": "solid"
+}
