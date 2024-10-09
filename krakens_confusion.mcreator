@@ -9,6 +9,18 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Test",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/command/TestCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
