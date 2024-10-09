@@ -21,6 +21,22 @@
           "src/main/java/net/mcreator/krakensconfusion/command/TestCommand.java"
         ]
       }
+    },
+    {
+      "name": "Skbidi",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skbidi",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/krakens_confusion/models/item/skbidi.json",
+          "src/main/java/net/mcreator/krakensconfusion/block/SkbidiBlock.java",
+          "src/main/resources/assets/krakens_confusion/models/block/skbidi.json",
+          "src/main/resources/assets/krakens_confusion/blockstates/skbidi.json",
+          "src/main/resources/data/krakens_confusion/loot_tables/blocks/skbidi.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -29,7 +45,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item_group.krakens_confusion.krakens_confusion": "Kraken\u0027s Confusion"
+      "item_group.krakens_confusion.krakens_confusion": "Kraken\u0027s Confusion",
+      "block.krakens_confusion.skbidi": "Skbidi"
     }
   },
   "foldersRoot": {
