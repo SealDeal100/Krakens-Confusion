@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "tab",
+  "definition": {
+    "name": "Kraken's Confusion",
+    "icon": {
+      "value": "Blocks.COBBLED_DEEPSLATE_WALL"
+    },
+    "showSearch": false
+  }
+}
