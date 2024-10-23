@@ -1,13 +1,13 @@
 {
-  "death.attack.obsidian_poisioning_damage.item": "%1$s was killed by %2$s using %3$s",
+  "death.attack.obsidian_poisoning_damage.player": "%1$s died of Obsidian Poisoning whilst trying to escape %2$s",
   "item.krakens_confusion.diamond_carrot": "Diamond Carrot",
   "item_group.krakens_confusion.krakens_confusion": "Kraken\u0027s Confusion",
-  "death.attack.obsidian_poisioning_damage": "%1$s died of Obsidian Poisoning",
-  "death.attack.obsidian_poisioning_damage.player": "%1$s died of Obsidian Poisoning whilst trying to escape %2$s",
+  "death.attack.obsidian_poisoning_damage.item": "%1$s was killed by %2$s using %3$s",
   "item.krakens_confusion.arrow_laser": "Arrow Laser",
   "effect.krakens_confusion.obsidian_poisoning": "Obsidian Poisoning",
   "item.krakens_confusion.diamond_nugget": "Diamond Nugget",
   "item.krakens_confusion.obsidian_alloy_sword": "Obsidian Alloy Sword",
   "item.krakens_confusion.obsidian_alloy_ingot": "Obsidian Alloy Ingot",
-  "item.krakens_confusion.fireball": "Fireball"
+  "item.krakens_confusion.fireball": "Fireball",
+  "death.attack.obsidian_poisoning_damage": "%1$s died of Obsidian Poisoning"
 }

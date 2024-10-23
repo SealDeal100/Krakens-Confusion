@@ -13,7 +13,7 @@ public class ObsidianAlloySwordHitProcedure {
 			Entity _ent = entity;
 			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
 				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s krakens_confusion:obsidian_poisoning 10 1");
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect give @s krakens_confusion:obsidian_poisoning 30 0");
 			}
 		}
 	}

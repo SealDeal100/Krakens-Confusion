@@ -21,7 +21,7 @@ public class ObsidianPoisoningTickProcedure {
 		}
 		if (entity.getPersistentData().getDouble("obsidian_poisoning_timer") >= seconds) {
 			entity.getPersistentData().putDouble("obsidian_poisoning_timer", 0);
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("krakens_confusion:obsidian_poisioning_damage")))), 3);
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("krakens_confusion:obsidian_poisoning_damage")))), 3);
 		} else {
 			entity.getPersistentData().putDouble("obsidian_poisoning_timer", (entity.getPersistentData().getDouble("obsidian_poisoning_timer") + 1));
 		}

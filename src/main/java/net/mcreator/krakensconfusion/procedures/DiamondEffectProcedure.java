@@ -7,12 +7,16 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.krakensconfusion.init.KrakensConfusionModMobEffects;
+
 public class DiamondEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(MobEffects.POISON);
+		if (entity instanceof LivingEntity _entity)
+			_entity.removeEffect(KrakensConfusionModMobEffects.OBSIDIAN_POISONING.get());
 		{
 			Entity _ent = entity;
 			if (!_ent.level().isClientSide() && _ent.getServer() != null) {

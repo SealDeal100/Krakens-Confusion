@@ -28,6 +28,7 @@ public class KrakensConfusionModTabs {
 				tabData.accept(KrakensConfusionModItems.DIAMOND_CARROT.get());
 				tabData.accept(KrakensConfusionModItems.DIAMOND_NUGGET.get());
 				tabData.accept(KrakensConfusionModItems.OBSIDIAN_ALLOY_INGOT.get());
+				tabData.accept(KrakensConfusionModItems.OBSIDIAN_ALLOY_SWORD.get());
 			})
 
 					.build());
@@ -38,6 +39,10 @@ public class KrakensConfusionModTabs {
 			if (tabData.hasPermissions()) {
 				tabData.accept(KrakensConfusionModItems.ARROW_LASER.get());
 			}
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+
+			tabData.accept(KrakensConfusionModItems.OBSIDIAN_ALLOY_SWORD.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
 			tabData.accept(KrakensConfusionModItems.DIAMOND_NUGGET.get());
@@ -46,10 +51,6 @@ public class KrakensConfusionModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 
 			tabData.accept(KrakensConfusionModItems.DIAMOND_CARROT.get());
-
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-
-			tabData.accept(KrakensConfusionModItems.OBSIDIAN_ALLOY_SWORD.get());
 
 		}
 	}
