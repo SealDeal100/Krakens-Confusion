@@ -15,7 +15,7 @@ import net.mcreator.krakensconfusion.procedures.DiamondEffectProcedure;
 
 public class DiamondCarrotItem extends Item {
 	public DiamondCarrotItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.6f).build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.6f).alwaysEat().build()));
 	}
 
 	@Override
