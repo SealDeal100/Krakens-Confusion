@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "krakens_confusion:diamond_nugget"
+    },
+    "b": {
+      "item": "minecraft:golden_carrot"
+    }
+  },
+  "result": {
+    "item": "krakens_confusion:diamond_carrot",
+    "count": 1
+  }
+}

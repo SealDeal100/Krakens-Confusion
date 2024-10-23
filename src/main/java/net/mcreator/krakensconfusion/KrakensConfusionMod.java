@@ -17,8 +17,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.krakensconfusion.init.KrakensConfusionModTabs;
+import net.mcreator.krakensconfusion.init.KrakensConfusionModMobEffects;
 import net.mcreator.krakensconfusion.init.KrakensConfusionModItems;
-import net.mcreator.krakensconfusion.init.KrakensConfusionModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -40,9 +41,11 @@ public class KrakensConfusionMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		KrakensConfusionModBlocks.REGISTRY.register(bus);
-
 		KrakensConfusionModItems.REGISTRY.register(bus);
+
+		KrakensConfusionModTabs.REGISTRY.register(bus);
+
+		KrakensConfusionModMobEffects.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
