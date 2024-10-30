@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:nether_star"
+  },
+  "base": {
+    "item": "minecraft:diamond"
+  },
+  "addition": {
+    "item": "minecraft:redstone_block"
+  },
+  "result": {
+    "item": "krakens_confusion:energy_orb"
+  }
+}

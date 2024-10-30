@@ -927,6 +927,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "EnergyOrbCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_orb_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/recipes/energy_orb_craft.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
