@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "krakens_confusion:block/alternate_world_portal_ew"
+    },
+    "axis=x": {
+      "model": "krakens_confusion:block/alternate_world_portal_ns"
+    }
+  }
+}

@@ -21,6 +21,7 @@ import net.mcreator.krakensconfusion.item.EmptyEnergyOrbItem;
 import net.mcreator.krakensconfusion.item.DiamondNuggetItem;
 import net.mcreator.krakensconfusion.item.DiamondCarrotItem;
 import net.mcreator.krakensconfusion.item.ArrowLaserItem;
+import net.mcreator.krakensconfusion.item.AlternateWorldItem;
 import net.mcreator.krakensconfusion.KrakensConfusionMod;
 
 public class KrakensConfusionModItems {
@@ -38,6 +39,7 @@ public class KrakensConfusionModItems {
 	public static final RegistryObject<Item> EMPTY_ENERGY_ORB = REGISTRY.register("empty_energy_orb", () -> new EmptyEnergyOrbItem());
 	public static final RegistryObject<Item> OBSIDIAN_SWORD = REGISTRY.register("obsidian_sword", () -> new ObsidianSwordItem());
 	public static final RegistryObject<Item> ENERGY_BLOCK = block(KrakensConfusionModBlocks.ENERGY_BLOCK);
+	public static final RegistryObject<Item> ALTERNATE_WORLD = REGISTRY.register("alternate_world", () -> new AlternateWorldItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

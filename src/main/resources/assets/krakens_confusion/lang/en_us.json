@@ -14,6 +14,7 @@
   "gamerule.doObsidianPoisoning.description": "If this is true when hit by an Obsidian Alloy Weapon/Tool the entity who was hit gets Obsidian Poisoning",
   "item.krakens_confusion.diamond_carrot": "Diamond Carrot",
   "item.krakens_confusion.obsidian_alloy_ingot": "Obsidian Alloy Ingot",
+  "item.krakens_confusion.alternate_world": "Alternate World Key",
   "death.attack.obsidian_poisoning_damage": "%1$s died of Obsidian Poisoning",
   "block.krakens_confusion.obsidian_compactor": "Obsidian Compactor",
   "death.attack.obsidian_poisoning_damage.player": "%1$s died of Obsidian Poisoning whilst trying to escape %2$s",

@@ -939,6 +939,58 @@
           "src/main/resources/data/krakens_confusion/recipes/energy_orb_craft.json"
         ]
       }
+    },
+    {
+      "name": "AlternateWorld",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alternate_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/item/AlternateWorldItem.java",
+          "src/main/java/net/mcreator/krakensconfusion/world/teleporter/AlternateWorldTeleporter.java",
+          "src/main/resources/assets/krakens_confusion/models/block/alternate_world_portal_ns.json",
+          "src/main/resources/assets/krakens_confusion/models/block/alternate_world_portal_ew.json",
+          "src/main/java/net/mcreator/krakensconfusion/block/AlternateWorldPortalBlock.java",
+          "src/main/resources/data/krakens_confusion/dimension_type/alternate_world.json",
+          "src/main/java/net/mcreator/krakensconfusion/world/dimension/AlternateWorldDimension.java",
+          "src/main/resources/data/krakens_confusion/dimension/alternate_world.json",
+          "src/main/java/net/mcreator/krakensconfusion/world/teleporter/AlternateWorldPortalShape.java",
+          "src/main/resources/assets/krakens_confusion/blockstates/alternate_world_portal.json",
+          "src/main/resources/assets/krakens_confusion/models/item/alternate_world.json"
+        ]
+      }
+    },
+    {
+      "name": "AlternateWorldPortalTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alternate_world_portal_trigger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/AlternateWorldPortalTriggerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -951,6 +1003,9 @@
     "ITEMS:minecraft:swords": [
       "~CUSTOM:ObsidianSword",
       "~CUSTOM:ObsidianAlloySword"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0"
     ]
   },
   "tab_element_order": {},
@@ -971,6 +1026,7 @@
       "gamerule.doObsidianPoisoning.description": "If this is true when hit by an Obsidian Alloy Weapon/Tool the entity who was hit gets Obsidian Poisoning",
       "item.krakens_confusion.diamond_carrot": "Diamond Carrot",
       "item.krakens_confusion.obsidian_alloy_ingot": "Obsidian Alloy Ingot",
+      "item.krakens_confusion.alternate_world": "Alternate World Key",
       "death.attack.obsidian_poisoning_damage": "%1$s died of Obsidian Poisoning",
       "block.krakens_confusion.obsidian_compactor": "Obsidian Compactor",
       "death.attack.obsidian_poisoning_damage.player": "%1$s died of Obsidian Poisoning whilst trying to escape %2$s",
