@@ -4,7 +4,7 @@
   "definition": {
     "name": "Kraken's Confusion",
     "icon": {
-      "value": "Blocks.COBBLED_DEEPSLATE_WALL"
+      "value": "CUSTOM:ObsidianAlloyIngot"
     },
     "showSearch": false
   }

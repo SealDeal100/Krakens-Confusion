@@ -17,13 +17,10 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:KrakensConfusion"
-      },
-      {
-        "value": "COMBAT"
       }
     ],
     "efficiency": 1.0,
-    "attackSpeed": 1.0,
+    "attackSpeed": 1.6,
     "enchantability": 2,
     "damageVsEntity": 10.0,
     "usageCount": 3037,

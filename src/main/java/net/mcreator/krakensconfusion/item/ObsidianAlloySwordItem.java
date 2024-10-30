@@ -42,13 +42,13 @@ public class ObsidianAlloySwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(KrakensConfusionModItems.OBSIDIAN_ALLOY_INGOT.get()));
 			}
-		}, 3, -3f, new Item.Properties().fireResistant());
+		}, 3, -2.4f, new Item.Properties().fireResistant());
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		ObsidianAlloySwordHitProcedure.execute(entity);
+		ObsidianAlloySwordHitProcedure.execute(entity.level(), entity);
 		return retval;
 	}
 

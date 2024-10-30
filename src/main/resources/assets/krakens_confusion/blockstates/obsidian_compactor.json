@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "krakens_confusion:block/obsidian_compactor"
+    },
+    "facing=east": {
+      "model": "krakens_confusion:block/obsidian_compactor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "krakens_confusion:block/obsidian_compactor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "krakens_confusion:block/obsidian_compactor",
+      "y": 270
+    }
+  }
+}

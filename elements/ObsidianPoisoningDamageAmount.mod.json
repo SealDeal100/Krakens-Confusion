@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Obsidian Poisoning Damage",
+    "description": "How much damage Obsidian Poisoning does.",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 3
+  }
+}

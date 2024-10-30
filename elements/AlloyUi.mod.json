@@ -1,0 +1,214 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_alloying",
+          "text": {
+            "fixedValue": "Alloying"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 133,
+          "y": 49
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 169,
+          "y": 94
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 241,
+          "y": 94
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_empty.png",
+          "use1Xscale": false,
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressOneToTenAlloyer"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressElevenToTwentyAlloyer"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressTwentyOneToThirty"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressThirtyOneToFourty"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressFourtyOneToFiftyAlloyer"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressFiftyOneToSixtyAlloyer"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressSixtyOneToSeventyAlloyer"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressSeventyOneToEightyAlloyer"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressEightyOneToNinetyAlloyer"
+          },
+          "x": 232,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar_filled_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProgressNinetyOneToOneHundredAlloyer"
+          },
+          "x": 232,
+          "y": 76
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 6,
+      "snapOnGrid": true
+    }
+  }
+}

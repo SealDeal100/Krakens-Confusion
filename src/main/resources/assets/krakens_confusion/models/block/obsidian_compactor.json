@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "krakens_confusion:block/obsidian_compactor_bottom",
+    "up": "krakens_confusion:block/obsidian_compactor_bottom",
+    "north": "krakens_confusion:block/obsidian_compactor_front",
+    "east": "krakens_confusion:block/obsidian_compactor_side",
+    "south": "krakens_confusion:block/obsidian_compactor_side",
+    "west": "krakens_confusion:block/obsidian_compactor_side",
+    "particle": "krakens_confusion:block/obsidian_compactor_bottom"
+  },
+  "render_type": "solid"
+}

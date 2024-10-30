@@ -180,6 +180,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -194,18 +198,6 @@
         "files": [
           "src/main/java/net/mcreator/krakensconfusion/item/ObsidianAlloySwordItem.java",
           "src/main/resources/assets/krakens_confusion/models/item/obsidian_alloy_sword.json"
-        ]
-      }
-    },
-    {
-      "name": "ObsidianPoisioningDamage",
-      "type": "damagetype",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "obsidian_poisoning_damage",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/krakens_confusion/damage_type/obsidian_poisoning_damage.json"
         ]
       }
     },
@@ -266,34 +258,627 @@
           }
         ]
       }
+    },
+    {
+      "name": "ObsidianAlloyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_alloy_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/loot_tables/blocks/obsidian_alloy_block.json",
+          "src/main/java/net/mcreator/krakensconfusion/block/ObsidianAlloyBlockBlock.java",
+          "src/main/resources/assets/krakens_confusion/blockstates/obsidian_alloy_block.json",
+          "src/main/resources/assets/krakens_confusion/models/block/obsidian_alloy_block.json",
+          "src/main/resources/assets/krakens_confusion/models/item/obsidian_alloy_block.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianCompactor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_compactor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/krakens_confusion/models/item/obsidian_compactor.json",
+          "src/main/resources/data/krakens_confusion/loot_tables/blocks/obsidian_compactor.json",
+          "src/main/java/net/mcreator/krakensconfusion/block/ObsidianCompactorBlock.java",
+          "src/main/resources/assets/krakens_confusion/blockstates/obsidian_compactor.json",
+          "src/main/resources/assets/krakens_confusion/models/block/obsidian_compactor.json"
+        ]
+      }
+    },
+    {
+      "name": "AlloyUi",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alloy_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/world/inventory/AlloyUiMenu.java",
+          "src/main/java/net/mcreator/krakensconfusion/client/gui/AlloyUiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianAlloyer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_alloyer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/block/entity/ObsidianAlloyerBlockEntity.java",
+          "src/main/resources/data/krakens_confusion/loot_tables/blocks/obsidian_alloyer.json",
+          "src/main/resources/assets/krakens_confusion/models/item/obsidian_alloyer.json",
+          "src/main/java/net/mcreator/krakensconfusion/block/ObsidianAlloyerBlock.java",
+          "src/main/resources/assets/krakens_confusion/blockstates/obsidian_alloyer.json",
+          "src/main/resources/assets/krakens_confusion/models/block/obsidian_alloyer.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianAlloyerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_alloyer_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ObsidianAlloyerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProgressOneToTenAlloyer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_one_to_ten_alloyer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressOneToTenAlloyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressElevenToTwentyAlloyer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_eleven_to_twenty_alloyer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressElevenToTwentyAlloyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressTwentyOneToThirty",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_twenty_one_to_thirty",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressTwentyOneToThirtyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressThirtyOneToFourty",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_thirty_one_to_fourty",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressThirtyOneToFourtyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressFourtyOneToFiftyAlloyer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_fourty_one_to_fifty_alloyer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressFourtyOneToFiftyAlloyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressFiftyOneToSixtyAlloyer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_fifty_one_to_sixty_alloyer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressFiftyOneToSixtyAlloyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressSixtyOneToSeventyAlloyer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_sixty_one_to_seventy_alloyer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressSixtyOneToSeventyAlloyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressSeventyOneToEightyAlloyer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_seventy_one_to_eighty_alloyer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressSeventyOneToEightyAlloyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressEightyOneToNinetyAlloyer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_eighty_one_to_ninety_alloyer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressEightyOneToNinetyAlloyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "ProgressNinetyOneToOneHundredAlloyer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_ninety_one_to_one_hundred_alloyer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/ProgressNinetyOneToOneHundredAlloyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/progressObsidianAlloyer"
+    },
+    {
+      "name": "EnergyOrb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_orb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/krakens_confusion/models/item/energy_orb.json",
+          "src/main/java/net/mcreator/krakensconfusion/item/EnergyOrbItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyOrbDurabilityCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_orb_durability_check",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/EnergyOrbDurabilityCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmptyEnergyOrb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_energy_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/item/EmptyEnergyOrbItem.java",
+          "src/main/resources/assets/krakens_confusion/models/item/empty_energy_orb.json"
+        ]
+      }
+    },
+    {
+      "name": "EnergyOrbTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_orb_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/EnergyOrbTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ObsidianAlloyerCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_alloyer_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/recipes/obsidian_alloyer_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/item/ObsidianSwordItem.java",
+          "src/main/resources/assets/krakens_confusion/models/item/obsidian_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianSwordCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_sword_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/recipes/obsidian_sword_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianAlloySwordCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_alloy_sword_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/recipes/obsidian_alloy_sword_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianPoisoningDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_poisoning_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/damage_type/obsidian_poisoning_damage.json"
+        ]
+      }
+    },
+    {
+      "name": "BlacksmithAlloyTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blacksmith_alloy_trade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "DoObsidianPoisoning",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "do_obsidian_poisoning",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "ObsidianPoisoningDamageAmount",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_poisoning_damage_amount",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ObsidianAlloyBlock"
+    ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:ObsidianSword",
       "~CUSTOM:ObsidianAlloySword"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "death.attack.obsidian_poisoning_damage.player": "%1$s died of Obsidian Poisoning whilst trying to escape %2$s",
+      "gamerule.obsidianPoisoningDamageAmount": "Obsidian Poisoning Damage",
       "item.krakens_confusion.diamond_carrot": "Diamond Carrot",
-      "item_group.krakens_confusion.krakens_confusion": "Kraken\u0027s Confusion",
+      "gamerule.obsidianPoisoningDamageAmount.description": "How much damage Obsidian Poisoning does.",
+      "item.krakens_confusion.empty_energy_orb": "Empty Energy Orb",
       "death.attack.obsidian_poisoning_damage.item": "%1$s was killed by %2$s using %3$s",
       "item.krakens_confusion.arrow_laser": "Arrow Laser",
       "effect.krakens_confusion.obsidian_poisoning": "Obsidian Poisoning",
-      "item.krakens_confusion.diamond_nugget": "Diamond Nugget",
       "item.krakens_confusion.obsidian_alloy_sword": "Obsidian Alloy Sword",
+      "gui.krakens_confusion.alloy_ui.label_alloying": "Alloying",
+      "gui.krakens_confusion.alloy_ui.label_time_remaining_bnbtnumbertim": "Time Remaining: \u003cBNBT:number:timer\u003e ticks",
       "item.krakens_confusion.obsidian_alloy_ingot": "Obsidian Alloy Ingot",
       "item.krakens_confusion.fireball": "Fireball",
-      "death.attack.obsidian_poisoning_damage": "%1$s died of Obsidian Poisoning"
+      "gamerule.doObsidianPoisoning": "Give Obsidian Poisoning",
+      "death.attack.obsidian_poisoning_damage": "%1$s died of Obsidian Poisoning",
+      "block.krakens_confusion.obsidian_compactor": "Obsidian Compactor",
+      "death.attack.obsidian_poisoning_damage.player": "%1$s died of Obsidian Poisoning whilst trying to escape %2$s",
+      "item_group.krakens_confusion.krakens_confusion": "Kraken\u0027s Confusion",
+      "block.krakens_confusion.obsidian_alloyer": "Obsidian Alloyer",
+      "item.krakens_confusion.diamond_nugget": "Diamond Nugget",
+      "block.krakens_confusion.obsidian_alloy_block": "Obsidian Alloy Block",
+      "gamerule.doObsidianPoisoning.description": "If this is true when hit by an Obsidian Alloy Weapon/Tool the entity who was hit gets Obsidian Poisoning",
+      "item.krakens_confusion.obsidian_sword": "Obsidian Sword",
+      "item.krakens_confusion.energy_orb": "Energy Orb"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "progressObsidianAlloyer",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "krakens_confusion",

@@ -17,10 +17,10 @@ public class FireballCooldownProcedure {
 		double yaw = 0;
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
-		speed = 3;
+		speed = 1;
 		yaw = entity.getYRot();
 		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = EntityType.FIREBALL.spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
+			Entity entityToSpawn = EntityType.FIREBALL.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 			if (entityToSpawn != null) {
 				entityToSpawn.setDeltaMovement((speed * Math.cos((yaw + 90) * (Math.PI / 180))), (entity.getLookAngle().y), (speed * Math.sin((yaw + 90) * (Math.PI / 180))));
 			}

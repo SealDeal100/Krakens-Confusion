@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Give Obsidian Poisoning",
+    "description": "If this is true when hit by an Obsidian Alloy Weapon/Tool the entity who was hit gets Obsidian Poisoning",
+    "category": "MOBS",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}
