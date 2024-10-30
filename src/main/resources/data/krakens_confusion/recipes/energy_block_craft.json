@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:smooth_stone"
+    },
+    "b": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "c": {
+      "item": "krakens_confusion:energy_orb"
+    }
+  },
+  "result": {
+    "item": "krakens_confusion:energy_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "krakens_confusion:block/energy_block_top",
+    "up": "krakens_confusion:block/energy_block_top",
+    "north": "krakens_confusion:block/energy_block_top",
+    "east": "krakens_confusion:block/energy_block_top",
+    "south": "krakens_confusion:block/energy_block_top",
+    "west": "krakens_confusion:block/energy_block_top",
+    "particle": "krakens_confusion:block/energy_block_top"
+  },
+  "render_type": "solid"
+}

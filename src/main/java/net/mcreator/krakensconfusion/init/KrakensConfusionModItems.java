@@ -37,6 +37,7 @@ public class KrakensConfusionModItems {
 	public static final RegistryObject<Item> ENERGY_ORB = REGISTRY.register("energy_orb", () -> new EnergyOrbItem());
 	public static final RegistryObject<Item> EMPTY_ENERGY_ORB = REGISTRY.register("empty_energy_orb", () -> new EmptyEnergyOrbItem());
 	public static final RegistryObject<Item> OBSIDIAN_SWORD = REGISTRY.register("obsidian_sword", () -> new ObsidianSwordItem());
+	public static final RegistryObject<Item> ENERGY_BLOCK = block(KrakensConfusionModBlocks.ENERGY_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

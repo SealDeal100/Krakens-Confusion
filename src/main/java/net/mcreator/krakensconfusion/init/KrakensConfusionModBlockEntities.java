@@ -12,11 +12,13 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.krakensconfusion.block.entity.ObsidianAlloyerBlockEntity;
+import net.mcreator.krakensconfusion.block.entity.EnergyBlockBlockEntity;
 import net.mcreator.krakensconfusion.KrakensConfusionMod;
 
 public class KrakensConfusionModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, KrakensConfusionMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> OBSIDIAN_ALLOYER = register("obsidian_alloyer", KrakensConfusionModBlocks.OBSIDIAN_ALLOYER, ObsidianAlloyerBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> ENERGY_BLOCK = register("energy_block", KrakensConfusionModBlocks.ENERGY_BLOCK, EnergyBlockBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

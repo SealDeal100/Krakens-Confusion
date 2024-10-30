@@ -830,12 +830,110 @@
         "files": [],
         "type": "number"
       }
+    },
+    {
+      "name": "EnergyBlockTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_block_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/EnergyBlockTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/block/entity/EnergyBlockBlockEntity.java",
+          "src/main/resources/assets/krakens_confusion/models/item/energy_block.json",
+          "src/main/resources/data/krakens_confusion/loot_tables/blocks/energy_block.json",
+          "src/main/resources/assets/krakens_confusion/blockstates/energy_block.json",
+          "src/main/java/net/mcreator/krakensconfusion/block/EnergyBlockBlock.java",
+          "src/main/resources/assets/krakens_confusion/models/block/energy_block.json"
+        ]
+      }
+    },
+    {
+      "name": "EnergyBlockCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_block_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/recipes/energy_block_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "EnergyBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/krakensconfusion/procedures/EnergyBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:EnergyBlock",
       "~CUSTOM:ObsidianAlloyBlock"
     ],
     "ITEMS:minecraft:swords": [
@@ -847,7 +945,6 @@
   "language_map": {
     "en_us": {
       "gamerule.obsidianPoisoningDamageAmount": "Obsidian Poisoning Damage",
-      "item.krakens_confusion.diamond_carrot": "Diamond Carrot",
       "gamerule.obsidianPoisoningDamageAmount.description": "How much damage Obsidian Poisoning does.",
       "item.krakens_confusion.empty_energy_orb": "Empty Energy Orb",
       "death.attack.obsidian_poisoning_damage.item": "%1$s was killed by %2$s using %3$s",
@@ -856,17 +953,19 @@
       "item.krakens_confusion.obsidian_alloy_sword": "Obsidian Alloy Sword",
       "gui.krakens_confusion.alloy_ui.label_alloying": "Alloying",
       "gui.krakens_confusion.alloy_ui.label_time_remaining_bnbtnumbertim": "Time Remaining: \u003cBNBT:number:timer\u003e ticks",
-      "item.krakens_confusion.obsidian_alloy_ingot": "Obsidian Alloy Ingot",
       "item.krakens_confusion.fireball": "Fireball",
       "gamerule.doObsidianPoisoning": "Give Obsidian Poisoning",
+      "block.krakens_confusion.obsidian_alloyer": "Obsidian Alloyer",
+      "gamerule.doObsidianPoisoning.description": "If this is true when hit by an Obsidian Alloy Weapon/Tool the entity who was hit gets Obsidian Poisoning",
+      "item.krakens_confusion.diamond_carrot": "Diamond Carrot",
+      "item.krakens_confusion.obsidian_alloy_ingot": "Obsidian Alloy Ingot",
       "death.attack.obsidian_poisoning_damage": "%1$s died of Obsidian Poisoning",
       "block.krakens_confusion.obsidian_compactor": "Obsidian Compactor",
       "death.attack.obsidian_poisoning_damage.player": "%1$s died of Obsidian Poisoning whilst trying to escape %2$s",
+      "block.krakens_confusion.energy_block": "Energy Block",
       "item_group.krakens_confusion.krakens_confusion": "Kraken\u0027s Confusion",
-      "block.krakens_confusion.obsidian_alloyer": "Obsidian Alloyer",
-      "item.krakens_confusion.diamond_nugget": "Diamond Nugget",
       "block.krakens_confusion.obsidian_alloy_block": "Obsidian Alloy Block",
-      "gamerule.doObsidianPoisoning.description": "If this is true when hit by an Obsidian Alloy Weapon/Tool the entity who was hit gets Obsidian Poisoning",
+      "item.krakens_confusion.diamond_nugget": "Diamond Nugget",
       "item.krakens_confusion.obsidian_sword": "Obsidian Sword",
       "item.krakens_confusion.energy_orb": "Energy Orb"
     }
