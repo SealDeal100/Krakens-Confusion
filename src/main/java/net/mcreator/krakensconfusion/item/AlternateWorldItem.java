@@ -37,7 +37,7 @@ public class AlternateWorldItem extends Item {
 				success = true;
 			}
 
-			AlternateWorldPortalTriggerProcedure.execute(world, x, y, z);
+			AlternateWorldPortalTriggerProcedure.execute(world, x, y, z, itemstack);
 			return InteractionResult.SUCCESS;
 		}
 	}

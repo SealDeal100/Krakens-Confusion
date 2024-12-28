@@ -974,6 +974,10 @@
         ],
         "dependencies": [
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -991,12 +995,56 @@
           }
         ]
       }
+    },
+    {
+      "name": "CompressedDiamondBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_diamond_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/loot_tables/blocks/compressed_diamond_block.json",
+          "src/main/java/net/mcreator/krakensconfusion/block/CompressedDiamondBlockBlock.java",
+          "src/main/resources/assets/krakens_confusion/blockstates/compressed_diamond_block.json",
+          "src/main/resources/assets/krakens_confusion/models/block/compressed_diamond_block.json",
+          "src/main/resources/assets/krakens_confusion/models/item/compressed_diamond_block.json"
+        ]
+      }
+    },
+    {
+      "name": "CompressedDiamondBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_diamond_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/recipes/compressed_diamond_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DiamondBlockDecompress",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_block_decompress",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/krakens_confusion/recipes/diamond_block_decompress.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:CompressedDiamondBlock"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:CompressedDiamondBlock",
       "~CUSTOM:EnergyBlock",
       "~CUSTOM:ObsidianAlloyBlock"
     ],
@@ -1019,7 +1067,7 @@
       "effect.krakens_confusion.obsidian_poisoning": "Obsidian Poisoning",
       "item.krakens_confusion.obsidian_alloy_sword": "Obsidian Alloy Sword",
       "gui.krakens_confusion.alloy_ui.label_alloying": "Alloying",
-      "gui.krakens_confusion.alloy_ui.label_time_remaining_bnbtnumbertim": "Time Remaining: \u003cBNBT:number:timer\u003e ticks",
+      "block.krakens_confusion.compressed_diamond_block": "Compressed Diamond Block",
       "item.krakens_confusion.fireball": "Fireball",
       "gamerule.doObsidianPoisoning": "Give Obsidian Poisoning",
       "block.krakens_confusion.obsidian_alloyer": "Obsidian Alloyer",

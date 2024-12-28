@@ -85,7 +85,7 @@
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
-    "hasSkyLight": true,
+    "hasSkyLight": false,
     "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "Blocks.MOSS_BLOCK"

@@ -34,6 +34,7 @@ public class KrakensConfusionModTabs {
 				tabData.accept(KrakensConfusionModItems.OBSIDIAN_SWORD.get());
 				tabData.accept(KrakensConfusionModBlocks.ENERGY_BLOCK.get().asItem());
 				tabData.accept(KrakensConfusionModItems.ALTERNATE_WORLD.get());
+				tabData.accept(KrakensConfusionModBlocks.COMPRESSED_DIAMOND_BLOCK.get().asItem());
 			})
 
 					.build());

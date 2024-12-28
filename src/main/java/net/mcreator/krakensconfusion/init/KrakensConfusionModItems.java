@@ -40,6 +40,7 @@ public class KrakensConfusionModItems {
 	public static final RegistryObject<Item> OBSIDIAN_SWORD = REGISTRY.register("obsidian_sword", () -> new ObsidianSwordItem());
 	public static final RegistryObject<Item> ENERGY_BLOCK = block(KrakensConfusionModBlocks.ENERGY_BLOCK);
 	public static final RegistryObject<Item> ALTERNATE_WORLD = REGISTRY.register("alternate_world", () -> new AlternateWorldItem());
+	public static final RegistryObject<Item> COMPRESSED_DIAMOND_BLOCK = block(KrakensConfusionModBlocks.COMPRESSED_DIAMOND_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

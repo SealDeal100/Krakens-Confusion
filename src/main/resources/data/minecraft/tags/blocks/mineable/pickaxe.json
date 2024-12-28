@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "krakens_confusion:compressed_diamond_block",
     "krakens_confusion:energy_block",
     "krakens_confusion:obsidian_alloy_block"
   ]
